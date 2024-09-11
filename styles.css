@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+
+    h2 {
+        color: rgb(250, 248, 248);
+
+    }
+
+    line-height: 1.6;
+    margin: 10;
+    padding: 10;
+    background-color: #262525;
+    p{
+        color:aliceblue
+    }
+    a{
+        color: rgb(223, 65, 7);
+    }
+}
+
+header {
+    background-color: #3b5998;
+    color: rgb(15, 11, 11);
+    padding: 1rem;
+    text-align: center;
+}
+
+ul li {
+    color: rgb(241, 238, 238);
+}
+
+/* Adicione mais estilos conforme necessário */
