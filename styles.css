@@ -1,4 +1,3 @@
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -26,13 +25,14 @@ h1 {
     margin: 0;
 }
 
-h2, h3 {
+h2,
+h3 {
     color: #0b0b0b;
     text-align: center;
     margin: 20px 0;
 }
 
-/* Links */
+
 a {
     color: #d13f07;
     text-decoration: none;
@@ -43,13 +43,13 @@ a:hover {
     color: #ff6347;
 }
 
-/* Listas em grade */
+
 ul {
     list-style-type: none;
     padding: 0;
 }
 
-ul li {
+.ingredients li {
     color: #333;
     padding: 10px;
     display: flex;
@@ -58,19 +58,33 @@ ul li {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #ccc;
+    position: relative;
 }
 
-ul li img {
+.ingredients li::before {
+    content: "★";
+    font-size: 20px;
+    color: #ff6347;
+    position: absolute;
+    left: -20px;
+}
+
+/* Borda ao redor das imagens */
+.ingredients li img {
     margin-right: 10px;
     width: 40px;
     height: 40px;
+    border: 2px solid #333;
+    border-radius: 50%;
 }
 
-/* Estilo de grade */
-.grid-list,
-.grid-list2,
-.grid-list3,
-.grid-list4 {
+.bolo-img {
+    border: 5px solid #333;
+    border-radius: 10px;
+}
+
+
+.grid-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
@@ -78,8 +92,6 @@ ul li img {
     padding: 20px;
     border-radius: 10px;
 }
-
-/* Estilo dos vídeos e imagens */
 video {
     display: block;
     margin: 20px auto;
@@ -94,7 +106,21 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para <h4> */
+
+.highlight {
+    color: #ff3333;
+    font-weight: bold;
+}
+
+
+.preparo-secao {
+    background-color: #fdf2f2;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 h4 {
     color: #ff3333;
     font-size: 1.2em;
