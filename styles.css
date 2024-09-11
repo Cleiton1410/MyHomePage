@@ -1,32 +1,102 @@
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
-
-    h2 {
-        color: rgb(250, 248, 248);
-
-    }
-
     line-height: 1.6;
-    margin: 10;
-    padding: 10;
-    background-color: #262525;
-    p{
-        color:aliceblue
-    }
-    a{
-        color: rgb(223, 65, 7);
-    }
+    margin: 0;
+    padding: 0;
+    background-color: #f6f7f7;
+    color: #0a0a0a;
 }
 
 header {
-    background-color: #3b5998;
-    color: rgb(15, 11, 11);
+    background-color: #f0b3b3;
+    color: #0e0d0d;
     padding: 1rem;
     text-align: center;
+    border-bottom: 5px solid #333;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2, h3 {
+    color: #0b0b0b;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Links */
+a {
+    color: #d13f07;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff6347;
+}
+
+/* Listas em grade */
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 ul li {
-    color: rgb(241, 238, 238);
+    color: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #f0b3b3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
 }
 
-/* Adicione mais estilos conforme necessário */
+ul li img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+/* Estilo de grade */
+.grid-list,
+.grid-list2,
+.grid-list3,
+.grid-list4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    background-color: #f5f4f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilo dos vídeos e imagens */
+video {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para <h4> */
+h4 {
+    color: #ff3333;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
